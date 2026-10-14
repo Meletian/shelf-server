@@ -1,0 +1,17 @@
+node_modules/
+**/node_modules/
+**/*.local
+**/*.local.*
+.env
+**/.env
+**/.dev.vars
+**/.wrangler/
+**/data/
+*.log
+**/*.db*
+**/*.sqlite*
+**/*.pem
+**/*.key
+__pycache__/
+**/__pycache__/
+.DS_Store

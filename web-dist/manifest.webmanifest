@@ -1,0 +1,15 @@
+{
+  "name": "Shelf — 共享文件托盘",
+  "short_name": "Shelf",
+  "description": "在设备之间同步文字、文件和附件",
+  "id": "/app/",
+  "start_url": "/app/",
+  "scope": "/app/",
+  "display": "standalone",
+  "background_color": "#f6f7f5",
+  "theme_color": "#2e6858",
+  "icons": [
+    { "src": "/app/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/app/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "package": "@noble/hashes",
+    "version": "2.4.0",
+    "license": "MIT",
+    "file": "noble-hashes.txt"
+  },
+  {
+    "package": "ws",
+    "version": "8.21.0",
+    "license": "MIT",
+    "file": "ws.txt"
+  },
+  {
+    "package": "fflate",
+    "version": "0.8.3",
+    "license": "MIT",
+    "file": "fflate.txt"
+  },
+  {
+    "package": "react",
+    "version": "19.3.0",
+    "license": "MIT",
+    "file": "react.txt"
+  },
+  {
+    "package": "react-dom",
+    "version": "19.3.0",
+    "license": "MIT",
+    "file": "react-dom.txt"
+  },
+  {
+    "package": "scheduler",
+    "version": "0.28.0",
+    "license": "MIT",
+    "file": "scheduler.txt"
+  },
+  {
+    "package": "lucide-react",
+    "version": "1.48.0",
+    "license": "ISC",
+    "file": "lucide-react.txt"
+  },
+  {
+    "package": "@xmldom/xmldom",
+    "version": "0.9.12",
+    "license": "MIT",
+    "file": "xmldom-xmldom.txt"
+  },
+  {
+    "package": "cfb",
+    "version": "1.2.2",
+    "license": "Apache-2.0",
+    "file": "cfb.txt"
+  },
+  {
+    "package": "xlsx",
+    "version": "0.20.3",
+    "license": "Apache-2.0",
+    "file": "xlsx.txt"
+  },
+  {
+    "package": "qrcode-generator",
+    "version": "2.0.4",
+    "license": "MIT",
+    "file": "qrcode-generator.txt"
+  }
+]

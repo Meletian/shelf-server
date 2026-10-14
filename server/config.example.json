@@ -1,0 +1,11 @@
+{
+ "origin":"https://shelf.example.com",
+ "listenHost":"0.0.0.0","listenPort":8790,
+ "dataDirectory":"/data","webDirectory":"web-dist",
+ "encryptionKey":"GENERATE_ON_YOUR_SERVER",
+ "storageNamespace":"selfhost-v1",
+ "streaming":true,"directUploads":true,"mobileImports":true,
+ "allowedOrigins":["tauri://localhost","http://tauri.localhost"],
+ "trustedProxies":[],
+ "providers":{"google":{"clientId":"","clientSecret":""}}
+}

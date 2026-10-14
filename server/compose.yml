@@ -1,0 +1,32 @@
+services:
+  shelf:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./config.local:/app/server/config.local:ro
+      - shelf_data:/data
+    expose: ["8790"]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8790/healthz',{headers:{host:process.env.SHELF_DOMAIN}}).then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    environment:
+      SHELF_DOMAIN: ${SHELF_DOMAIN:?Set server/.env}
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on: [shelf]
+    environment:
+      SHELF_DOMAIN: ${SHELF_DOMAIN:?Set server/.env}
+    ports: ["80:80", "443:443", "443:443/udp"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+volumes:
+  shelf_data:
+  caddy_data:
+  caddy_config:

@@ -1,0 +1,3 @@
+{$SHELF_DOMAIN} {
+    reverse_proxy shelf:8790
+}
