@@ -57,3 +57,11 @@ npm test
 ```
 
 需要 Node.js 24.12 或更新版本。检查包含真实本地 HTTP / WebSocket、状态持久化、单实例锁、停机等待，以及部署脚本的配置保存与失败路径。Google 与 Docker 外部边界使用受控测试依赖；没有据此宣称远程 Linux / 新 OAuth 项目已实测。短信文字修复已获用户实体 iPhone 确认；自配置版的新服务器授权仍需部署后验证。
+
+## Cloudflare 私有空间（无需 Google）
+
+如果只需自己的多台设备同步，可使用独立 Worker＋私有 R2＋D1。无需 VPS 或 Google API 授权；Shelf 不人为限制容量或请求，Cloudflare 自身额度及费用仍适用。
+
+[完整部署教程与一条命令](https://github.com/Meletian/shelf-server/releases/download/private-cf-v1.0.0/CLOUDFLARE-SETUP.md) · [源码和 PWA 部署包](https://github.com/Meletian/shelf-server/releases/tag/private-cf-v1.0.0)
+
+在 Shelf 0.3.59 或更新版本选择「自配置服务 → Cloudflare 私有空间」，填写向导输出的服务地址。官方托管空间另有每账号500 MB、每天10,000次及每分钟120次请求限制。
